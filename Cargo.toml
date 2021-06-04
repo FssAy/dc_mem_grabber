@@ -1,0 +1,12 @@
+[package]
+name = "dc_mem_grabber"
+version = "0.1.0"
+edition = "2018"
+authors = ["FssAy"]
+
+[dependencies]
+sysinfo = "0.17.5"
+base64 = "0.13.0"
+
+[dependencies.libc]
+version = "0.2.94"
