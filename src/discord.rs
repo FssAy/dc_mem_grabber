@@ -7,14 +7,14 @@ pub fn get_pids() -> Vec<DWORD> {
     let mut sys = System::new();
     sys.refresh_processes();
 
-    let discords: Vec<String> = vec![
-        "Discord.exe".to_string(),
-        "DiscordCanary.exe".to_string(),
-        "DiscordPTB.exe".to_string()
+    let discords: Vec<&str> = vec![
+        "Discord.exe",
+        "DiscordCanary.exe",
+        "DiscordPTB.exe"
     ];
 
     for (pid, proc) in sys.get_processes() {
-        if discords.contains(&proc.name().to_string()) {
+        if discords.contains(&proc.name()) {
             res_pids.push(*pid as DWORD);
         }
     }
