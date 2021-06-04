@@ -30,4 +30,6 @@ But fortunately first part of the token is user's ID encoded in base64, so all w
 That can be done by searching for parts like `"user":{"id":"` and grabbing the `18` characters after this substring.
 
 ## Disclaimer
-Of course, it's an unstable solution. We can get invalid tokens, or non at all. <br>
+Of course, it's an unstable solution. We can get invalid tokens, or non at all.
+
+Based on: http://www.cplusplus.com/forum/general/202725/
