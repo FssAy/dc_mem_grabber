@@ -1,3 +1,10 @@
+# ARCHIVED
+### visit https://github.com/DmitrijVC/dish-logger if you are interested. 
+
+<br>
+
+<br>
+
 # dc_mem_grabber [POC]
 Discord token grabber, but it grabs tokens from the processes' memory.
 
@@ -33,3 +40,4 @@ That can be done by searching for parts like `"user":{"id":"` and grabbing the `
 Of course, it's an unstable solution. We can get invalid tokens, or non at all.
 
 Based on: http://www.cplusplus.com/forum/general/202725/
+.
